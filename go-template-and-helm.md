@@ -34,5 +34,9 @@ This error usually occurs when you improperly use the `-` (dash) symbol in the g
 
 ### Solution
 
-```
+```diff
+- {{- if .Values.tls -}}
++ {{- if .Values.tls }}
+  tls: true
+{{- end -}}
 ```
